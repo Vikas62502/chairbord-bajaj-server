@@ -1,0 +1,76 @@
+package com.chairboard.dto.customer.fastag
+
+import com.chairboard.dto.UserResponse
+import com.chairboard.dto.customer.CustomerResponse
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class FastagRow(
+    var id: String? = null,
+    var request_id: String,
+    var session: String,
+    var vehicle_no: String,
+    var tag_sr_no: String,
+    var status: String,
+    var chassis: String,
+    var engine: String,
+    var vehicleManuf: String,
+    var model: String,
+    var vehicleColour: String,
+    var type: String,
+    var npciStatus: String,
+    var isCommercial: Boolean,
+    var tagVehicleClassId: String,
+    var npciVehicleClassId: String,
+    var vehicleType: String,
+    var rechargeAmount: Double,
+    var securityDeposit: Double,
+    var tagCost: Double,
+    var debitAmt: Double,
+    var name: String,
+    var mobileNo: String,
+    var walletId: String,
+    var tid: String,
+    var rcImageFront: String,
+    var rcImageBack: String,
+    var vehicleImage: String,
+    var udf1: String,
+    var udf2: String,
+    var udf3: String,
+    var udf4: String,
+    var udf5: String,
+    var recordType: String,
+    var agent: UserResponse? = null,
+    var customer: CustomerResponse? = null,
+    var createdAt: String? = null,
+)
+
+@Serializable
+data class FastagRowListItem(
+    var id: String,
+    var session: String,
+    var request_id: String,
+    var vehicle_no: String,
+    var tag_sr_no: String,
+    var status: String,
+    var npciStatus: String,
+    var vehicleType: String,
+    var rechargeAmount: Double,
+    var securityDeposit: Double,
+    var tagCost: Double,
+    var debitAmt: Double,
+    var name: String,
+    var mobileNo: String,
+    var walletId: String,
+    var tid: String,
+    var udf1: String,
+    var udf2: String,
+    var udf3: String,
+    var udf4: String,
+    var udf5: String,
+    var recordType: String,
+    var agent: UserResponse? = null,
+    var customer: CustomerResponse? = null,
+    var createdAt: String? = null,
+)
+
